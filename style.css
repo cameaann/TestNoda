@@ -1,0 +1,158 @@
+body{
+    font-family: 'Roboto';
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.wrap-container{
+    margin: 0 auto;
+    width: 1200px;
+    height: 1000px;
+    background-color: #C0DBD9;
+
+}
+.header{
+    position: relative;
+    width: 1109px;
+    height: 40px;
+    background-color: #7FAFF6;
+    margin: 0 auto;
+    padding:30.5px 30px;
+
+}
+.button{
+    display: block;
+    width: 176px;
+    height: 23px;
+    font-size: 20px;
+    padding: 8px 15px;
+    color:#ffffff;
+    background-color: #A5C7F9;
+    border-radius: 5px;
+}
+.button:hover{
+    cursor: pointer;
+}
+
+.button_checkbox{
+    display: none;
+}
+
+.popUp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width:400px;
+    height: 400px;
+    background-color: #ffffff;
+    color: #000000;
+    opacity:0;
+    font-size: 53px;
+    top:100%;
+    left:5%;
+}
+.close-button_checkbox{
+    display: none;
+}
+.close-button{
+    position: absolute;
+    cursor: pointer;
+    top:15px;
+    right:15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:43px;
+    height: 39px;
+    border-radius: 5px;
+    background-color: #7FAFF6;
+    color: #ffffff;
+}
+.close-button::after{
+    content: "X";
+    font-size: 20px;
+}
+
+.button_checkbox:checked ~ .popUp{
+    opacity: 1;
+}
+
+.close-button:checked ~ .popUp{
+    opacity: 0;
+}
+
+
+.block1{
+    width:1170px;
+    margin: 15px auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #B3F95A;
+    gap:15px;
+}
+.block{
+    height: 198px;
+    background-color: #8AD191;
+}
+.block::after{
+    color: #ffffff;
+    font-size: 53px;
+    display: flex;
+    height:198px;
+    justify-content: center;
+    align-items: center;
+}
+.b1{
+    width:390px;
+}
+.b1::after{
+    content: '1';
+}
+.b2{
+    width:590px;
+}
+.b2::after{
+    content: '2';
+}
+.b3{
+    width:160px;
+}
+.b3::after{
+    content: '3';
+}
+.b4{
+    width:995px;
+}
+.b4::after{
+    content: '4';
+}
+.b5{
+    width:160px;
+}
+.b5::after{
+    content: '5';
+}
+
+.block2{
+    max-width:1110px;
+    margin: 15px auto 100px auto;
+    display: flex;
+    background-color: #88B5BF;
+    gap:30px;
+    padding: 30px;
+}
+
+.box{
+    background-color: #0D89B0;
+    width:255px;
+    height:199px;
+    flex-shrink: 3;
+}
+.footer{
+    width: 1170px;
+    height: 100px;
+    background-color: #7FAFF6;
+    margin: 0 auto;
+}
